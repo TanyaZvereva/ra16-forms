@@ -10,8 +10,9 @@
     justify-content: space-between;
     margin-bottom: 30px;
 }
-.tracker-container table tbody{
+.tracker-container table{
     border: 2px solid black;
-    border-radius: 10px;
-    padding: 5px;
+    border-radius: 15px;
+    padding: 10px;
+    min-width: 500px;
 }

@@ -1,5 +1,7 @@
 import { useCallback, useState } from "react"
 import './style.css'
+import EditIcon from '@mui/icons-material/Edit';
+import CloseIcon from '@mui/icons-material/Close';
 const initialState = { date: '', km: '' }
 const Tracker = () => {
     const [form, setForm] = useState(initialState)
@@ -43,7 +45,7 @@ console.log(editItem)
                  return <tr key={item.date+key}><td>{item.date}</td><td>{item.km}</td><td><span onClick={()=>{
                     setEditItem(key)
                     setForm(item)
-                 }}>r</span><span onClick={()=>handleRemove(key)}>x</span></td></tr>
+                 }}><EditIcon/></span><span onClick={()=>handleRemove(key)}><CloseIcon/></span></td></tr>
             })}</tbody></table>
         </div>
     )
